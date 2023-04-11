@@ -10,11 +10,11 @@ int length(char a[]){
     return count ;
 
 }
-
+//success
 //l= leftmost index    r = rightmost index
 void reverse(char arr[], int l , int r){
-    l = 0 ; 
-     r = length(arr) - 1;
+    // l = 0 ; 
+    //  r = length(arr) - 1;
     while(l<r){
         char t = arr[l];
         arr[l] = arr[r];
@@ -57,11 +57,11 @@ void reverse(char arr[], int l , int r){
 // }
 
 int main(){
-    char str[] = " i am Aishanya";
+    char str[] = "i am Aishanya";
     int l = 0 ; 
     int n = length(str)- 1;
     reverse(str , 0 , n);
-    while(l<n){
+    while(l<=n){
         int r  = l ;
         while(str[r]!= ' ' && str[r]!= '\0')
         {
