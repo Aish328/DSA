@@ -25,11 +25,11 @@ void trim(char arr[]){
 
 int main() {
     char str[] = "Geeks for Geeks";
-     int idx ;
+     int idx = 0 ;
     for(int i = 0 ; str[i] !='\0' ; i++){
         if(str[i] != ' '){
            
-            str[idx] = i ;
+            str[idx] = str[i] ;
             idx++;
         }
     } 
