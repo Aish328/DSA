@@ -17,16 +17,17 @@ using namespace std;
 //                           { 2, 30, 85, 72}
 //                           { 6, 31, 99, 15}} 
 // Output: 1 3 2 6 31 30 6 9 4 90 85 99 15 72 11 10
+//success
 
-void Wave(int a[][100],int n ){
+void Wave(int a[4][4],int n , int m ){//m -->rows n--> columns
     for(int j = 0 ; j <= n ; j++){
         if(j%2 == 0){
-            for(int i = 0 ; i <= j ; i++ ){
+            for(int i = 0 ; i < m ; i++ ){
                 cout << a[i][j] << " ";
             }
         }
         else{
-            for(int i = n-1 ; i>= 0 ; i--){
+            for(int i = m-1 ; i>= 0 ; i--){
                 cout << a[i][j] << " "  ;
             }
         }
@@ -35,10 +36,10 @@ void Wave(int a[][100],int n ){
     }
 
     int main(){
-        int arr[][100]= {{1,   9,  4, 10},
+        int arr[4][4]= {{1,   9,  4, 10},
                     { 3,   6, 90, 11} ,           
                     { 2, 30, 85, 72},
                  { 6, 31, 99, 15}};
-        Wave(arr , 5);
+        Wave(arr , 4 , 4);
     cout << arr ;
     }
